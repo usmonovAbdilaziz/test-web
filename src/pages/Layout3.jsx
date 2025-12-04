@@ -3,42 +3,15 @@ import line2 from "../assets/rightLine.png";
 import bgLayout3 from "../assets/lineBackground.jpg";
 function Layout3() {
   return (
-    <div className="flex flex-col items-center justify-center  my-[100px]">
-      <div className="container flex flex-col  w-[90%]">
-        <div className="col-3 flex flex-row items-center">
-          <img src={line2} className="p-4" alt="" />
-          <button
-            style={{ border: "2px solid #888787" }}
-            className="relative text-[10px] w-[90px] h-[30px] rounded-full text-white 
-            bg-gradient-to-r from-[#2c3e50] via-[#0o0o0o] to-[#1a1f2b]
-            overflow-hidden"
-          >
-            Road Map
-          </button>
-
-          <img src={line1} className="p-4" alt="" />
-        </div>
-        <div className="col-4 m-0 p-0 flex flex-row justify-between ">
-          <strong className="text-[50px] w-[900px]">
-            Our Timeline on Development Goals.
-          </strong>
-
-          <p className="text-[20px] m-4 w-[1000px] text-[#AFAFAF] flex items-center text-right justify-end">
-            LegalSifter is rapidly evolving. We already provide real contract &
-            smart-contract analysis with human-assisted review, while our full
-            AI automation is currently in development. This roadmap shows
-            exactly how we scale from today's demo version to a complete,
-            autonomous Web3 legal engine.
-          </p>
-        </div>
-      </div>
+    <div className="container mx-auto flex flex-col  items-center justify-center  my-[100px]">
       <div
-        className="w-[100%] h-[400px] bg-center bg-cover  "
+        className="w-full h-auto bg-center bg-cover flex items-center justify-center"
         style={{ backgroundImage: `url(${bgLayout3})` }}
       >
-        <div className="flex flex-row ms-[70px] w-[90%] items-center my-[100px] gap-10">
+        <div className="flex w-[90%] flex-col md:flex-row md:justify-start items-center gap-6 md:gap-10 px-2   py-10 overflow-x-auto">
+          {/* Card 01 */}
           <div
-            className="group w-[330px] h-[350px] p-7 flex flex-col
+            className="group min-w-[250px] min-h-[300px] p-7 flex flex-col
             bg-black/40 backdrop-blur-md border border-white/20
             rounded-[40px] 
             transition-all duration-300
@@ -47,15 +20,12 @@ function Layout3() {
             <span className="text-white/70 transition-all duration-300 group-hover:text-blue-400">
               01
             </span>
-
             <strong className="text-[32px] text-white transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgb(0,102,255)]">
               Launch
             </strong>
-
             <span className="text-[20px] text-white/80 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgb(0,102,255)]">
               Status: Completed
             </span>
-
             <small className="text-white/70 mt-2 transition-all duration-300 group-hover:text-blue-300">
               Core AI Infrastructure Setup
             </small>
@@ -73,109 +43,102 @@ function Layout3() {
             </small>
           </div>
 
+          {/* Card 02 */}
           <div
-            className="group w-[330px] h-[350px] p-7 flex flex-col
-            bg-black/40 backdrop-blur-md border border-white/20
-            rounded-[40px] 
-            transition-all duration-300
-            hover:shadow-[0_0_25px_15px_rgba(255,255,255,0.3),0_0_10px_5px_rgba(0,102,255,0.45)]"
+            className="group  min-w-[250px] min-h-[300px] p-7 flex flex-col
+      bg-black/40 backdrop-blur-md border border-white/20
+      rounded-[40px] transition-all duration-300
+      hover:shadow-[0_0_25px_15px_rgba(255,255,255,0.3),0_0_10px_5px_rgba(0,102,255,0.45)]"
           >
             <span className="text-white/70 transition-all duration-300 group-hover:text-blue-400">
               02
             </span>
-
-            <strong className="text-[32px] text-white transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgb(0,102,255)]">
+            <strong className="text-[28px] text-white transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgb(0,102,255)]">
               Development Phase 1
             </strong>
-
-            <span className="text-[20px] text-white/80 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgb(0,102,255)]">
-              Status: In Progress{" "}
+            <span className="text-[18px] text-white/80 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgb(0,102,255)]">
+              Status: In Progress
             </span>
-
             <small className="text-white/70 mt-2 transition-all duration-300 group-hover:text-blue-300">
-              Advanced AI Risk Scoring for Contracts{" "}
+              Advanced AI Risk Scoring for Contracts
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
               Automated Scam & Exploit Detection (beta)
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              Expanded Dataset for Crypto & Web3{" "}
+              Expanded Dataset for Crypto & Web3
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              Internal Tools for Analysts (augmented review){" "}
+              Internal Tools for Analysts (augmented review)
             </small>
             <small className="text-white/50 transition-all duration-300 group-hover:text-blue-200">
-              Onboarding First Businesses & Early Partners{" "}
+              Onboarding First Businesses & Early Partners
             </small>
           </div>
+
+          {/* Card 03 */}
           <div
-            className="group w-[330px] h-[350px] p-7 flex flex-col
-            bg-[#02071A]/40 backdrop-blur-md border border-white/20
-            rounded-[40px] 
-            transition-all duration-300
-            hover:shadow-[0_0_25px_15px_rgba(255,255,255,0.3),0_0_10px_5px_rgba(0,102,255,0.45)]"
+            className="group min-w-[250px] min-h-[300px] p-5 flex flex-col
+      bg-[#02071A]/40 backdrop-blur-md border border-white/20
+      rounded-[40px] transition-all duration-300
+      hover:shadow-[0_0_25px_15px_rgba(255,255,255,0.3),0_0_10px_5px_rgba(0,102,255,0.45)]"
           >
             <span className="text-white/70 transition-all duration-300 group-hover:text-blue-400">
               03
             </span>
-
-            <strong className="text-[32px] text-white transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgb(0,102,255)]">
+            <strong className="text-[28px] text-white transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgb(0,102,255)]">
               Development Phase 2
             </strong>
-
-            <span className="text-[20px] text-white/80 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgb(0,102,255)]">
-              Status: Starting Soon{" "}
+            <span className="text-[18px] text-white/80 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgb(0,102,255)]">
+              Status: Starting Soon
             </span>
-
             <small className="text-white/70 mt-2 transition-all duration-300 group-hover:text-blue-300">
-              Full Smart-Contract Automated Review{" "}
+              Full Smart-Contract Automated Review
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              Real-Time Transaction & Compliance Monitoring{" "}
+              Real-Time Transaction & Compliance Monitoring
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              AI Legal Advisor for Web3 Operations{" "}
+              AI Legal Advisor for Web3 Operations
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              API for Exchanges, Wallets & DeFi Protocols{" "}
+              API for Exchanges, Wallets & DeFi Protocols
             </small>
             <small className="text-white/50 transition-all duration-300 group-hover:text-blue-200">
-              Predictive Exploit Detection Engine (alert system){" "}
+              Predictive Exploit Detection Engine (alert system)
             </small>
           </div>
+
+          {/* Card 04 */}
           <div
-            className="group w-[330px] h-[350px] p-7 flex flex-col
-            bg-black/40 backdrop-blur-md border border-white/20
-            rounded-[40px] 
-            transition-all duration-300
-            hover:shadow-[0_0_25px_15px_rgba(255,255,255,0.3),0_0_10px_5px_rgba(0,102,255,0.45)]"
+            className="group min-w-[250px] min-h-[300px] p-5 flex flex-col
+      bg-black/40 backdrop-blur-md border border-white/20
+      rounded-[40px] transition-all duration-300
+      hover:shadow-[0_0_25px_15px_rgba(255,255,255,0.3),0_0_10px_5px_rgba(0,102,255,0.45)]"
           >
             <span className="text-white/70 transition-all duration-300 group-hover:text-blue-400">
               04
             </span>
-
             <strong className="text-[32px] text-white transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgb(0,102,255)]">
-              Growth{" "}
+              Growth
             </strong>
-
             <span className="text-[20px] text-white/80 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgb(0,102,255)]">
               Status: Future
             </span>
-
             <small className="text-white/70 mt-2 transition-all duration-300 group-hover:text-blue-300">
-              Public Launch of Autonomous AI Review{" "}
+              Public Launch of Autonomous AI Review
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              Business Platform & User Dashboard{" "}
+              Business Platform & User Dashboard
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              LegalSifter API Mainnet{" "}
+              LegalSifter API Mainnet
             </small>
             <small className="text-white/70 transition-all duration-300 group-hover:text-blue-300">
-              Partnership Program for Crypto Companies{" "}
+              Partnership Program for Crypto Companies
             </small>
             <small className="text-white/50 transition-all duration-300 group-hover:text-blue-200">
-              AI Agents for Fraud, Risk & Contract Intelligence{" "}
+              AI Agents for Fraud, Risk & Contract Intelligence
             </small>
           </div>
         </div>

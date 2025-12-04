@@ -5,39 +5,47 @@ import layout2_1 from "../assets/Blayout2.png";
 
 function Layout2() {
   return (
-    <div className="container flex w-[90%] flex-col my-[70px]">
-      <div className="flex flex-row bg-black items-center justify-center">
-        <div
-          className="flex h-[492px] bg-center  flex flex-row bg-cover border-2 border-black rounded-[16px]"
-          style={{ backgroundImage: `url(${bgJuveller})` }}
-        >
-          <div className="flex flex-col w-[50%] mt-[150px] px-[50px]">
-            <p className="text-[12px] text-[#86A6FD]">AI Market Intelligence</p>
-            <strong className="text-[38px] text-white py-4">
-              AI Powered Smart <br /> Contract Security
-            </strong>
-            <p className="text-[18px] family-WorkSans text-[#AFAFAF]">
-              Our agents read and analyze smart contracts line-by-line,
-              detecting exploits, vulnerabilities, attack vectors and logical
-              flaws. From redlining terms to auditing Solidity, Rust, Move and
-              Vyper code, LegalSifter provides instant risk ratings and
-              automated remediation suggestions.
-            </p>
-          </div>
-          <img src={juveller} className="m-0 p-0 w-[50%] h-[110%]" alt="" />
+    <div className="container mx-auto w-[90%] my-16 flex flex-col gap-12">
+      {/* Hero Section */}
+      <div className="flex flex-col md:flex-row bg-black border-2 border-black rounded-[16px] overflow-hidden">
+        {/* Text Block */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-12">
+          <p className="text-sm md:text-base text-[#86A6FD]">
+            AI Market Intelligence
+          </p>
+          <strong className="text-2xl md:text-4xl text-white py-2 md:py-4 leading-snug">
+            AI Powered Smart <br /> Contract Security
+          </strong>
+          <p className="text-sm md:text-base font-sans text-[#AFAFAF]">
+            Our agents read and analyze smart contracts line-by-line, detecting
+            exploits, vulnerabilities, attack vectors and logical flaws. From
+            redlining terms to auditing Solidity, Rust, Move and Vyper code,
+            LegalSifter provides instant risk ratings and automated remediation
+            suggestions.
+          </p>
         </div>
-      </div>
-      <div className="flex flex-row mt-[30px] justify-between">
+        {/* Image Block */}
         <div
-          className="w-[49%] h-[687px] bg-cover bg-center  border-2 border-black rounded-[24px]"
+          className="w-full md:w-1/2 h-64 md:h-[492px] bg-center bg-cover"
+          style={{ backgroundImage: `url(${juveller})` }}
+        ></div>
+      </div>
+
+      {/* Two-Column Section */}
+      <div className="flex flex-col md:flex-row gap-6">
+        {/* Left Block */}
+        <div
+          className="relative w-full md:w-1/2 h-80 md:h-[687px] bg-center bg-cover border-2 border-black rounded-[24px]"
           style={{ backgroundImage: `url(${layout2})` }}
         >
-          <div className="flex flex-col w-[90%]  mt-[250px] px-[50px]">
-            <p className="text-[12px] text-[#86A6FD]">SMART CONTRACT AUDIT</p>
-            <strong className="text-[38px] text-white py-4">
+          <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-12">
+            <p className="text-sm md:text-base text-[#86A6FD]">
+              SMART CONTRACT AUDIT
+            </p>
+            <strong className="text-2xl md:text-4xl text-white py-2 md:py-4 leading-snug">
               Trustless Data Sources & On-Chain Intelligence Network
             </strong>
-            <p className="text-[18px] family-WorkSans text-[#AFAFAF] ">
+            <p className="text-sm md:text-base font-sans text-[#AFAFAF]">
               LegalSifter aggregates data from multiple chains, oracles,
               mempools, exploiter wallets, attack archives and ML-risk
               databases. Our distributed intelligence network allows real-time
@@ -47,16 +55,19 @@ function Layout2() {
           </div>
         </div>
 
+        {/* Right Block */}
         <div
-          className="w-[49%] h-[687px] bg-cover bg-center  border-2 border-black rounded-[24px]"
+          className="relative w-full md:w-1/2 h-80 md:h-[687px] bg-center bg-cover border-2 border-black rounded-[24px]"
           style={{ backgroundImage: `url(${layout2_1})` }}
         >
-          <div className="flex flex-col w-[90%]  mt-[260px] px-[50px]">
-            <p className="text-[12px] text-[#86A6FD]">ON-ChAIN SECURITY</p>
-            <strong className="text-[38px] text-white py-4">
+          <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-12">
+            <p className="text-sm md:text-base text-[#86A6FD]">
+              ON-CHAIN SECURITY
+            </p>
+            <strong className="text-2xl md:text-4xl text-white py-2 md:py-4 leading-snug">
               Threat Modelling & Attack Simulation
             </strong>
-            <p className="text-[18px] family-WorkSans text-[#AFAFAF] ">
+            <p className="text-sm md:text-base font-sans text-[#AFAFAF]">
               AI agents simulate the most common and emerging Web3 attack
               patterns: reentrancy, flash-loan loops, price-oracle manipulation,
               governance capture and economic exploits. This allows you to

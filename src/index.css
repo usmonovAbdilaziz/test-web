@@ -86,4 +86,35 @@
     animation: carousel-up 40s linear infinite;
     display: flex;
   }
+
+  /* Form styling */
+  .form-input {
+    @apply w-full px-4 py-3 sm:px-6 sm:py-4 text-base sm:text-lg text-black bg-white border border-gray-300 rounded-[30px] sm:rounded-[50px] outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+
+  .form-button {
+    @apply px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg text-white bg-blue-600 border border-blue-600 rounded-[30px] sm:rounded-[50px] outline-none hover:bg-blue-700 transition-colors focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+
+  /* Responsive helpers */
+  @media (max-width: 640px) {
+    .responsive-text-large {
+      font-size: 2rem;
+    }
+
+    .responsive-text-medium {
+      font-size: 1.5rem;
+    }
+
+    .responsive-text-small {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* Additional responsive utilities */
+  @media (max-width: 768px) {
+    .md\:hidden {
+      display: none;
+    }
+  }
 }

@@ -24,12 +24,13 @@ function Layout8() {
         {/* BACKGROUND LINE — ORQADA */}
         <img
           src={line}
-          className="absolute top-[-150px] left-20 w-full z-0 opacity-70"
+          className="absolute top-[-150px]  w-full z-0 opacity-70"
           alt=""
         />
 
         {/* CONTENT — OLDINDA */}
-        <div className="flex flex-row gap-10 justify-center items-center relative z-10">
+        {/* CONTENT — OLDINDA */}
+        <div className="flex flex-col md:flex-row gap-10 justify-center items-center relative z-10">
           {/* CARD 1 */}
           <div className="h-[320px] w-[320px] text-white mt-[50px] relative z-10">
             <small className="block flex flex-col gap-10 px-4 opacity-80">
@@ -38,9 +39,9 @@ function Layout8() {
                 cutting down the friction and managing capital flows across the
                 globe."
               </small>
-              <span className="text-[#86A6FD] text-[17px] flex items-center gap-2">
-                <img src={icon1} className="w-[100px]" alt="" />- ADENA
-                FRIEDMAN, CEO NASDAQ
+              <span className="text-[#86A6FD] text-[17px] flex flex-col gap-2">
+                <img src={icon1} className="w-[100px]" alt="" />
+                <span>- ADENA FRIEDMAN, CEO NASDAQ</span>
               </span>
             </small>
             <img src={bgImg3} className="mt-[-250px]" alt="" />
@@ -54,9 +55,9 @@ function Layout8() {
                 cutting down the friction and managing capital flows across the
                 globe."
               </small>
-              <span className="text-[#86A6FD] text-[17px] flex items-center gap-2">
-                <img src={icon2} className="w-[100px]" alt="" />- ADENA
-                FRIEDMAN, CEO NASDAQ
+              <span className="text-[#86A6FD] text-[17px] flex flex-col gap-2">
+                <img src={icon2} className="w-[100px]" alt="" />
+                <span>- ADENA FRIEDMAN, CEO NASDAQ</span>
               </span>
             </small>
             <img src={bgImg3} className="mt-[-250px]" alt="" />
@@ -70,9 +71,9 @@ function Layout8() {
                 cutting down the friction and managing capital flows across the
                 globe."
               </small>
-              <span className="text-[#86A6FD] text-[17px] flex items-center gap-2">
-                <img src={icon3} className="w-[100px]" alt="" />- ADENA
-                FRIEDMAN, CEO NASDAQ
+              <span className="text-[#86A6FD] text-[17px] flex flex-col gap-2">
+                <img src={icon3} className="w-[100px]" alt="" />
+                <span>- ADENA FRIEDMAN, CEO NASDAQ</span>
               </span>
             </small>
             <img src={bgImg3} className="mt-[-250px]" alt="" />
@@ -81,13 +82,20 @@ function Layout8() {
       </div>
 
       {/* Footer */}
-      <div className="flex  flex-row items-center justify-center w-full mt-[200px] ">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[50px] text-white">
+      <div
+        className=" 
+    flex flex-col-reverse md:flex-row
+    items-center justify-center 
+    w-full mt-[200px] gap-10
+  "
+      >
+        {/* LEFT CONTENT */}
+        <div className="flex flex-col items-center  justify-center text-center ">
+          <h1 className="text-[48px] text-white"style={{marginLeft:'30px'}}>
             Join the{" "}
             <strong
               className="text-white"
-              style={{ textShadow: "0 0 15px #3b82f6" }} // blue-500 shadow
+              style={{ textShadow: "0 0 15px #3b82f6" }}
             >
               LegalSifter
             </strong>{" "}
@@ -99,73 +107,54 @@ function Layout8() {
             early access opportunities
           </p>
 
-          <form className="flex  my-[60px] bg-white  border-white rounded-full w-[644px] h-[64px] justify-between items-center ">
+          <form
+            className="
+        flex my-[60px] bg-white rounded-full 
+        w-[90%] md:w-[644px] h-[64px]
+        items-center justify-between
+      "
+          >
             <input
-              className="flex-1 px-8 text-2xl  text-black outline-none"
+              className="flex-1 px-8 text-xl text-black outline-none"
               type="text"
               placeholder="Join Waitlist"
             />
-            <button className=" border-white bg-[#090F22CC] h-full  rounded-full px-8 py-2 text-white text-2xl outline-none">
+            <button
+              className="
+          bg-[#090F22CC] h-full rounded-full 
+          px-8 py-2 text-white text-xl outline-none
+        "
+            >
               Request Demo
               <i
                 style={{ textShadow: "0 0 20px rgb(7, 71, 247)" }}
-                className="fa-solid fa-magnifying-glass"
+                className="fa-solid fa-magnifying-glass ml-2"
               ></i>
             </button>
           </form>
+
           <ul className="flex gap-6 flex-row">
-            <a
-              href="#"
-              className="w-[55px] h-[55px] rounded-full flex items-center justify-center 
-               border border-white/100 
-               bg-black 
-               shadow-inner shadow-white/100"
-            >
-              <img src={twitter} className="w-[25px]" alt="" />
-            </a>
-
-            <a
-              href="#"
-              className="w-[55px] h-[55px] rounded-full flex items-center justify-center 
-               border border-white/100 
-               bg-black 
-               shadow-inner shadow-white/100"
-            >
-              <img src={telegram} className="w-[25px]" alt="" />
-            </a>
-
-            <a
-              href="#"
-              className="w-[55px] h-[55px] rounded-full flex items-center justify-center 
-               border border-white/100 
-               bg-black 
-               shadow-inner shadow-white/100"
-            >
-              <img src={instagram} className="w-[25px]" alt="" />
-            </a>
-
-            <a
-              href="#"
-              className="w-[55px] h-[55px] rounded-full flex items-center justify-center 
-               border border-white/100 
-               bg-black 
-               shadow-inner shadow-white/100"
-            >
-              <img src={coingeko} className="w-[25px]" alt="" />
-            </a>
-
-            <a
-              href="#"
-              className="w-[55px] h-[55px] rounded-full flex items-center justify-center 
-               border border-white/100 
-               bg-black 
-               shadow-inner shadow-white/100"
-            >
-              <img src={coinmarketcap} className="w-[25px]" alt="" />
-            </a>
+            {[twitter, telegram, instagram, coingeko, coinmarketcap].map(
+              (icon, idx) => (
+                <a
+                  key={idx}
+                  href="#"
+                  className="
+              w-[55px] h-[55px] rounded-full 
+              flex items-center justify-center 
+              border border-white/100 
+              bg-black shadow-inner shadow-white/100
+            "
+                >
+                  <img src={icon} className="w-[25px]" alt="" />
+                </a>
+              )
+            )}
           </ul>
         </div>
-        <img src={phone} alt="" />
+
+        {/* PHONE IMAGE (SMALL SCREEN → TOP) */}
+        <img src={phone} className="w-[200px] md:w-auto" alt="" />
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const badges = [
 export function Layout5() {
   return (
     <div className="w-full flex flex-col items-center justify-center my-[100px]">
-      <div className="flex items-center justify-center ms-[-100px] ">
+      <div className="flex items-center justify-center  ">
         <img src={line2} alt="" />
         <button
           style={{ border: "2px solid #888787" }}
@@ -38,7 +38,7 @@ export function Layout5() {
 
         <img src={line1} alt="" />
       </div>
-      <h1 className="text-[46px] font-bold text-white ms-[-100px] mt-[20px]">Integrated With</h1>
+      <h1 className="text-[46px] font-bold text-white mt-[20px]">Integrated With</h1>
       <div className="w-full mt-10 flex justify-center overflow-hidden">
         <div className="w-full py-3 relative h-[200px]">
           {/* Top horizontal track - moving left to right */}
@@ -82,50 +82,6 @@ export function Layout5() {
               </a>
             ))}
           </div>
-
-          {/* Left vertical track - moving top to bottom
-        <div className="absolute left-0 top-0 h-full flex flex-col animate-carousel-down">
-        {[...badges, ...badges].map((item, index) => (
-          <a
-          key={`left-${index}`}
-          href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-          flex items-center gap-3 bg-[#1b1e23] px-8 py-4
-          rounded-full border border-gray-500 hover:bg-[#2b3038]
-          transition mx-4 my-2 whitespace-nowrap
-          "
-          >
-          <img src={item.icon} alt={item.name} className="w-6 h-6" />
-          <span className="text-white text-[18px] font-medium">
-          {item.name}
-          </span>
-          </a>
-          ))}
-          </div> */}
-
-          {/* Right vertical track - moving bottom to top */}
-          {/* <div className="absolute right-0 top-0 h-full flex flex-col animate-carousel-up">
-          {[...badges, ...badges].map((item, index) => (
-            <a
-            key={`right-${index}`}
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-            flex items-center gap-3 bg-[#1b1e23] px-8 py-4
-            rounded-full border border-gray-500 hover:bg-[#2b3038]
-            transition mx-4 my-2 whitespace-nowrap
-            "
-            >
-            <img src={item.icon} alt={item.name} className="w-6 h-6" />
-            <span className="text-white text-[18px] font-medium">
-            {item.name}
-            </span>
-            </a>
-            ))}
-            </div> */}
         </div>
       </div>
     </div>
